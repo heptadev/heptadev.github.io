@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="horizondotcom">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  
+  <title>horizondotcom</title>
+  <link rel="manifest" href="manifest.json">
+
+  
+  <script>
+    var serviceWorkerVersion = '2704598736';
+  </script>
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+  <style>
+    body {
+      background-color: #ffffff;
+      height: 100vh;
+      width: 100vw;
+      margin: 0px;
+  }
+  .heptalogo{
+    margin: 0;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+  .main-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity .4s ease-out;
+  }
+  </style>
+
+  <script>
+
+    function delay(time) {
+      return new Promise(resolve => setTimeout(resolve, time));
+    }
+
+   
+    window.addEventListener('load', function(ev) {
+      var loaderContent = document.querySelector('#loader-content');
+
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        }
+      }).then(function(engineInitializer) {
+
+        engineInitializer.initializeEngine().then(async function (appRunner) {
+        loaderContent.style.opacity = "0";
+        await delay(400);
+        await appRunner.runApp();
+      })
+    });
+  });
+  
+  </script>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.0/firebase-app.js";
+  
+  const firebaseConfig = {
+    apiKey: "AIzaSyDMNOmGpayRIV9tYLvYbSa0wJPIClwQWXM",
+    authDomain: "hepta-5bd96.firebaseapp.com",
+    projectId: "hepta-5bd96",
+    storageBucket: "hepta-5bd96.appspot.com",
+    messagingSenderId: "461220116876",
+    appId: "1:461220116876:web:7632af9af24f0081fe7ea9"
+  };
+
+  const app = initializeApp(firebaseConfig);
+</script>
+
+<div class="main-content", id="loader-content">
+  <img src="favicon.ico" alt="Hepta Horizons" class="heptalogo">
+</div>
+</body>
+</html>
