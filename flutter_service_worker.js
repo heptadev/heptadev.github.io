@@ -3,8 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "flutter.js": "1cfe996e845b3a8a33f57607e8b09ee4",
-"favicon.ico": "a4fff305cf3fe7c8b6ccc5d75f89adb4",
+  "favicon.ico": "a4fff305cf3fe7c8b6ccc5d75f89adb4",
 "assets/assets/chess.jpg": "9bfe0ab428008db2c22d1b9182ae8332",
 "assets/assets/Hepta%2520Horizons.png": "1bf8883ae467f31f7c246a8795c1ee1b",
 "assets/assets/FR_CROP.jpg": "e481bcef78c1484ceae70dbb36f284b5",
@@ -47,21 +46,18 @@ const RESOURCES = {
 "assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/NOTICES": "2a775a6ff1ecd0b387625b1169ddeb35",
-"img/Hepta%20Horizons.png": "1bf8883ae467f31f7c246a8795c1ee1b",
-"img/heptablack.png": "0a05f4a4a4247e643231e1c80b3d7e24",
-"main.dart.js": "a01fa9accfe91b6022c73e6eb88629c9",
+"main.dart.js": "3615fbebe6c347032153153850b5140b",
 "version.json": "289282b4d7c44614f85471fe77b716ac",
-"canvaskit/canvaskit.wasm": "3de12d898ec208a5f31362cc00f09b9e",
-"canvaskit/canvaskit.js": "97937cb4c2c2073c968525a3e08c86a3",
-"canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
-"canvaskit/profiling/canvaskit.js": "c21852696bc1cc82e8894d851c01921a",
-"index.html": "58759139d995b23b16505cc20aefd3a3",
-"/": "58759139d995b23b16505cc20aefd3a3",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
-"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"manifest.json": "90a2234f75c6fb0bb85a4928c147fa7e"
+"index.html": "fa64f9aae6f42091f20359ff0a10d37e",
+"/": "fa64f9aae6f42091f20359ff0a10d37e",
+"icons/ms-icon-144x144.png": "a691d39b15b39baaa5642ad130c37dc8",
+"icons/apple-icon-180x180.png": "e240a741eac409310942ff608c41af62",
+"icons/ms-icon-150x150.png": "681ffdcdcc45dae835fde485b50cf95b",
+"icons/android-icon-96x96.png": "2736842d1ecb805c7493e4e3ea90a08e",
+"icons/ms-icon-310x310.png": "e1bf2f24d86509bbad0bf9e774434925",
+"icons/android-icon-192x192.png": "e184cd8773d7167863c899c9df5321dd",
+"icons/heptablack.png": "0a05f4a4a4247e643231e1c80b3d7e24",
+"manifest.json": "30282d05c5b33b1797fe19562aef9719"
 };
 
 // The application shell files that are downloaded before a service worker can
